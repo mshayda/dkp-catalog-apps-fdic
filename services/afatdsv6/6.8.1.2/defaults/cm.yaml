@@ -1,9 +1,0 @@
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: afatdsv5-6.8.1.2-smb-defaults
-  namespace: ${releaseNamespace}
-data:
-  values.yaml: |
-    ---
