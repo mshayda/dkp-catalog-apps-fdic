@@ -1,12 +1,12 @@
-# dkp-catalog-apps
-dkp-catalog-apps
+# dkp-catalog-apps-fdic
+dkp-catalog-apps-fdic
 
 ```
 kubectl apply -f - <<EOF
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
-  name: thaadv1-catalog-applications
+  name: fdic-catalog-applications
   namespace: kommander
   labels:
     kommander.d2iq.io/gitapps-gitrepository-type: catalog
@@ -18,6 +18,6 @@ spec:
   ref:
     branch: main
   timeout: 20s
-  url: https://github.com/sburnsd2/dkp-catalog-apps
+  url: https://github.com/mshayda/dkp-catalog-apps-fdic
 EOF
 ```
